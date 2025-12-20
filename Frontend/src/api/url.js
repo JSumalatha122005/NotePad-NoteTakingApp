@@ -1,6 +1,7 @@
-// install axios
-import axios from 'axios';
+import axios from "axios";
+
 const BACKEND_URL = axios.create({
-    baseURL: "http://localhost:4001/api/v1/noteapp/",
+  baseURL: `${import.meta.env.VITE_API_URL}/api/v1/noteapp`,
 });
+
 export default BACKEND_URL;
